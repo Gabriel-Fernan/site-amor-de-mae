@@ -10,12 +10,10 @@
     padding: 0;
 }
 
-/* fundo do site branco */
 body{
     background-color: var(--branco);
 }
 
-/* garante fundo branco no elemento root */
 html{
     background-color: var(--branco);
 }
@@ -30,7 +28,6 @@ html{
     color: var(--branco);
 }
 
-/* imagens de redes sociais */
 .navbar .logos{
     display: flex;
     gap: 12px;
@@ -44,7 +41,6 @@ html{
     object-fit: contain;
 }
 
-/* links do lado direito */
 .navbar .links{
     display: flex;
     align-items: center;
@@ -68,25 +64,24 @@ html{
     .navbar .links a{ font-size: 14px; }
 }
 
-/* seção hero */
 .hero{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--rosa); /* fundo rosa externo */
-    padding: 12px 12px; /* espaçamento reduzido ao redor */
+    background-color: var(--rosa);
+    padding: 12px 12px;
 }
 
 .hero-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px; /* gap reduzido */
+    gap: 20px;
     width: 100%;
-    max-width: none; /* ocupar 100% */
-    background-color: var(--branco); /* container branco */
-    padding: 16px 18px; /* padding menor */
-    border: 1px solid rgba(0,0,0,0.06); /* borda sutil */
+    max-width: none;
+    background-color: var(--branco); 
+    padding: 16px 18px; 
+    border: 1px solid rgba(0,0,0,0.06); 
     border-radius: 6px;
 }
 
@@ -162,35 +157,33 @@ html{
     }
 }
 
-/* seção overlay com imagem de fundo */
 .overlay-section{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: transparent; /* fundo do site é branco; a imagem terá fundo rosa */
-    padding: 8px 8px; /* menos espaço ao redor */
+    background-color: transparent; 
+    padding: 8px 8px; 
 }
 
 .overlay-image{
     width: 100%;
-    max-width: none; /* ocupar 100% */
-    min-height: 85vh; /* ocupar quase toda a altura da tela */
-    height: auto; /* permite adaptação */
-    background-size: cover; /* imagem preenche a área mantendo proporção */
-    background-position: center center; /* centraliza a imagem */
+    max-width: none; 
+    min-height: 85vh; 
+    height: auto; 
+    background-size: cover; 
+    background-position: center center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     position: relative;
-    background-color: var(--rosa); /* fundo rosa por trás da imagem */
-    padding: 8px; /* menor padding para imagem quase-fundo */
+    background-color: var(--rosa); 
+    padding: 8px; 
     border-radius: 8px;
-    overflow: hidden; /* garante que a imagem fique dentro dos cantos arredondados */
+    overflow: hidden; 
 }
 
-/* image placed inline in HTML; style the img element */
 .overlay-image img{
     position: absolute;
     top: 0;
@@ -209,7 +202,7 @@ html{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: transparent; /* sem overlay */
+    background-color: transparent; 
     z-index: 1;
 }
 
@@ -247,7 +240,7 @@ html{
 
 @media (max-width: 768px){
     .overlay-image{
-        min-height: 70vh; /* ocupa grande parte da tela em dispositivos móveis */
+        min-height: 70vh; 
     }
     
     .overlay-text{
@@ -259,12 +252,11 @@ html{
     }
 }
 
-/* título acima das imagens */
 .cards-heading{
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 14px 12px 6px; /* pequeno gap acima das molduras */
+    padding: 14px 12px 6px; 
     background-color: transparent;
 }
 
@@ -281,7 +273,6 @@ html{
     .cards-heading p{ font-size: 14px; padding: 0 8px; }
 }
 
-/* seção com imagem do grupo */
 .group-section{
     width: 100%;
     display: flex;
@@ -320,12 +311,11 @@ html{
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
-/* styles moved from inline img attributes in index.html */
 .group-image img{
     width: 100%;
-    height: auto; /* allow full image to show without vertical cropping */
-    max-height: 520px; /* cap extreme heights to preserve layout */
-    object-fit: contain; /* keep full image visible */
+    height: auto; 
+    max-height: 520px; 
+    object-fit: contain; 
     display: block;
     border-radius: 12px;
 }
@@ -336,7 +326,6 @@ html{
     .group-image img{ height: auto; max-height: 320px; }
 }
 
-/* seção História (rodapé informativo) */
 .history-section{
     width: 100%;
     display: flex;
@@ -382,7 +371,6 @@ html{
     .history-text p{ font-size: 13px; }
 }
 
-/* espaçador grande usado quando o dropdown foi removido */
 .big-spacer{
     width: 100%;
     height: 160px;
@@ -392,7 +380,6 @@ html{
     .big-spacer{ height: 220px; }
 }
 
-/* Valores section styles */
 .valores-section{
     width: 100%;
     display: flex;
@@ -413,7 +400,7 @@ html{
     color: var(--branco);
     padding: 12px 36px;
     border-radius: 30px;
-    font-weight: 400; /* removed strong/bold */
+    font-weight: 400; 
     margin: 0 auto 22px auto;
 }
 
@@ -428,7 +415,7 @@ html{
     margin: 0 0 8px 0;
     color: var(--vermelho);
     font-size: 14px;
-    font-weight: 400; /* remove bold */
+    font-weight: 400; 
     text-transform: uppercase;
     letter-spacing: 0.6px;
 }
@@ -451,7 +438,6 @@ html{
     .valores-pill{ padding: 10px 28px; }
 }
 
-/* OTIMISMO block styling */
 .valores-footer{
     margin-top: 20px;
     color: #222;
@@ -480,7 +466,6 @@ html{
 }
 
 
-/* Seção Valores (dropdown) */
 .values-section{
     width: 100%;
     display: flex;
@@ -536,7 +521,6 @@ html{
     .values-select{ padding: 10px 12px; font-size: 14px; }
 }
 
-/* Seção destaque — título e área de imagem (modelo da imagem) */
 .group-hero{
     width: 100%;
     display: flex;
@@ -580,19 +564,17 @@ html{
 .group-photo{
     width: 100%;
     height: 360px;
-    background-color: transparent; /* removed grey background */
+    background-color: transparent;
     border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 2px 6px rgba(0,0,0,0.04);
 }
 
-/* Garante que a imagem interna seja mostrada por inteiro dentro do container
-   sem cortes: ajusta para ocupar o container mantendo proporção */
 .group-photo img{
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: contain; /* mostra a imagem inteira, pode deixar letterbox */
+    object-fit: contain;
 }
 
 @media (max-width: 900px){
@@ -606,7 +588,6 @@ html{
     .group-title{ font-size: 18px; }
 }
 
-/* seção Endereço */
 .address-section{
     width: 100%;
     display: flex;
@@ -663,7 +644,6 @@ html{
     border-radius: 8px;
 }
 
-/* iframe do mapa — responsivo e sem borda */
 .address-right iframe{
     width: 100%;
     height: 140px;
@@ -678,8 +658,6 @@ html{
     .address-right iframe{ height: 200px; }
 }
 
-
-/* Seção com gradient (antes do footer) */
 .gradient-section{
     width: 100%;
     background-image: url('../img/degrade.png');
@@ -744,7 +722,6 @@ html{
     .gradient-placeholder{ width: 100px; height: 40px; }
 }
 
-/* Rodapé */
 .site-footer{
     width: 100%;
     background-color: var(--vermelho);
@@ -798,7 +775,6 @@ html{
     border-radius: 8px;
 }
 
-/* centraliza a imagem dentro do placeholder e limita seu tamanho */
 .footer-placeholder{
     display: flex;
     align-items: center;
@@ -830,24 +806,20 @@ html{
     .footer-logo{ width: 40px; }
 }
 
-
-
-
-/* seção de cards com molduras (somente molduras, sem imagens) */
 .cards-section{
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: transparent; /* fundo do site branco */
-    padding: 18px 12px; /* espaço ao redor do bloco rosa */
+    background-color: transparent;
+    padding: 18px 12px;
 }
 
 .cards-wrap{
     width: 100%;
     max-width: 1200px;
-    background-color: var(--rosa); /* somente a área das molduras fica rosa */
-    padding: 24px; /* espaço interno rosa (aumentado) */
-    border-radius: 18px; /* borda mais arredondada para combinar com o design */
+    background-color: var(--rosa);
+    padding: 24px;
+    border-radius: 18px;
 }
 
 .cards{
@@ -859,19 +831,18 @@ html{
 }
 
 .card{
-    flex: 1 1 260px; /* cresce e encolhe mantendo base */
-    height: 200px; /* maior altura para mostrar melhor as imagens */
-    background-color: var(--branco); /* moldura branca onde estaria a imagem */
+    flex: 1 1 260px; 
+    height: 200px; 
+    background-color: var(--branco); 
     border-radius: 14px;
     border: 1px solid rgba(0,0,0,0.06);
     box-shadow: 0 1px 6px rgba(0,0,0,0.06);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover; /* garante corte suave e centralizado */
+    background-size: cover;
     overflow: hidden;
 }
 
-/* If an img tag is used inside the card, make it cover the box */
 .card img{ display: block; width: 100%; height: 100%; object-fit: cover; }
 
 @media (max-width: 900px){
@@ -898,7 +869,6 @@ html{
     }
 }
 
-/* seção com imagem do grupo */
 .group-section{
     width: 100%;
     display: flex;

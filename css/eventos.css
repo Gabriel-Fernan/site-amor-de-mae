@@ -28,7 +28,6 @@ html{
     color: var(--branco);
 }
 
-/* imagens de redes sociais */
 .navbar .logos{
     display: flex;
     gap: 12px;
@@ -42,7 +41,6 @@ html{
     object-fit: contain;
 }
 
-/* links do lado direito */
 .navbar .links{
     display: flex;
     align-items: center;
@@ -66,7 +64,68 @@ html{
     .navbar .links a{ font-size: 14px; }
 }
 
-/* Footer styles copied from index.css */
+.address-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 24px 12px;
+    background-color: transparent;
+}
+
+.address-area{
+    width: 100%;
+    max-width: 1000px;
+    background-color: var(--rosa);
+    padding: 18px;
+    border-radius: 18px;
+}
+
+.address-card{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--branco);
+    padding: 18px;
+    border-radius: 12px;
+}
+
+.address-left{
+    flex: 1 1 40%;
+}
+
+.address-title{
+    color: var(--vermelho);
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.address-lines p{
+    margin: 6px 0;
+    color: #222;
+    font-size: 14px;
+}
+
+.address-right{
+    flex: 1 1 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.address-right iframe{
+    width: 100%;
+    height: 200px;
+    border: 0;
+    border-radius: 8px;
+    display: block;
+}
+
+@media (max-width: 900px){
+    .address-card{ flex-direction: column; align-items: stretch; }
+    .address-right iframe{ height: 200px; }
+}
+
 .site-footer{
     width: 100%;
     background-color: var(--vermelho);
@@ -148,7 +207,6 @@ html{
     .footer-logo{ width: 40px; }
 }
 
-/* Gradient section styles (copied from index.css) */
 .gradient-section{
     width: 100%;
     background-image: url('../img/degrade.png');
