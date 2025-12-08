@@ -338,7 +338,6 @@ html{
     }
 }
 
-/* Container and header/back-arrow (copied from padaria.css for consistency) */
 .container{
     margin: 20px auto 0;
     padding: 0 20px;
@@ -367,10 +366,9 @@ html{
     color: #c9a9a8; 
 }
 
-/* Projects section styles */
 .hero-placeholder.big-hero{
     width: 100%;
-    height: 320px; /* espaço grande reservado para a imagem */
+    height: 320px; 
     background-color: #f5e6e8;
     border-radius: 8px;
     margin-bottom: 18px;
@@ -385,7 +383,6 @@ html{
     border-radius: 8px;
 }
 
-/* Hero caption under the big image */
 .hero-caption{
     max-width: 900px;
     margin: 12px auto 22px;
@@ -397,7 +394,6 @@ html{
     letter-spacing: 0.6px;
 }
 
-/* small accent bar above caption for a subtle separation */
 .hero-caption::before{
     content: '';
     display: block;
@@ -431,7 +427,7 @@ html{
     height: 4px;
     background: rgba(176,36,44,0.08);
     margin: 10px 0 18px;
-    width: 100%; /* ocupa 100% horizontal do contêiner */
+    width: 100%; 
     border: none;
     border-radius: 4px;
 }
@@ -445,17 +441,16 @@ html{
 }
 
 .project-box{
-    width: 140px; /* menor tamanho dos quadrados */
+    width: 140px; 
     aspect-ratio: 1 / 1;
     background: #fff;
     border: 6px solid rgba(176,36,44,0.12);
     border-radius: 8px;
     box-shadow: inset 0 0 0 2px rgba(249,237,238,0.8);
     position: relative;
-    overflow: hidden; /* garante que nada vaze para fora do quadrado */
+    overflow: hidden; 
 }
 
-/* Garantir que a âncora e a imagem preencham o quadrado e a imagem fique contida dentro dele */
 .project-box a{
     display: flex;
     align-items: center;
@@ -464,18 +459,17 @@ html{
     height: 100%;
     text-decoration: none;
     color: inherit;
-    padding: 8px; /* espaço interno entre borda e imagem */
+    padding: 8px; 
     box-sizing: border-box;
 }
 
 .project-box img{
     width: 100%;
     height: 100%;
-    object-fit: contain; /* mantém a imagem inteira dentro do quadrado */
+    object-fit: contain; 
     display: block;
 }
 
-/* Título exibido nas miniaturas quando não há imagem */
 .project-thumb-title{
     display: block;
     text-align: center;

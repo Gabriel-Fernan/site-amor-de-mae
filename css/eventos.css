@@ -271,7 +271,6 @@ html{
     .gradient-placeholder{ width: 100px; height: 40px; }
 }
 
-/* Container and header/back-arrow (copied from padaria.css for consistency) */
 .container{
     margin: 20px auto 0;
     padding: 0 20px;

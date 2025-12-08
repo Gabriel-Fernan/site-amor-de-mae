@@ -271,7 +271,6 @@ html{
     .gradient-placeholder{ width: 100px; height: 40px; }
 }
 
-/* Container and header/back-arrow (copied from padaria.css for consistency) */
 .container{
     margin: 20px auto 0;
     padding: 0 20px;
@@ -300,16 +299,14 @@ html{
     color: #c9a9a8; 
 }
 
-/* Hero / espaço de imagem logo abaixo da seta */
 .hero-placeholder.big-hero{
-    /* make the hero edge-to-edge horizontally */
     width: 100vw;
     max-width: none;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
     height: 420px;
     background-color: var(--rosa);
-    border-radius: 0; /* remove corner radius so it meets screen edges */
+    border-radius: 0;
     margin-top: 12px;
     margin-bottom: 18px;
     display: flex;
@@ -329,7 +326,6 @@ html{
 }
 
 .hero-placeholder.big-hero img{
-    /* fill horizontally and crop as needed to cover full width */
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -346,7 +342,6 @@ html{
     .hero-placeholder.big-hero .hero-placeholder-text{ font-size: 14px; padding: 8px 12px; }
 }
 
-/* History top: texto à esquerda e imagem à direita */
 .history-top{
     max-width: 1000px;
     margin: 6px auto 18px;
@@ -395,10 +390,9 @@ html{
     .history-side img{ width: 100%; max-width: 420px; }
 }
 
-/* Novo bloco: hero-top (espaço de imagem pequeno em cima) */
 .hero-top{
     width: 100%;
-    height: 320px; /* aumentado um pouco mais conforme solicitado */
+    height: 320px; 
     background-color: var(--rosa);
     border-radius: 8px;
     margin: 10px 0 14px;

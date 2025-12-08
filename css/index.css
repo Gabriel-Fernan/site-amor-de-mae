@@ -131,7 +131,6 @@ html{
     color: var(--vermelho);
 }
 
-/* responsivo */
 @media (max-width: 768px){
     .hero{
         padding: 30px 15px;

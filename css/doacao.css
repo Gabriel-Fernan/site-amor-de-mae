@@ -150,7 +150,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2px; /* reduzido para permitir que a imagem ocupe mais espaço */
+    padding: 2px;
     overflow: hidden;
 }
 
@@ -164,7 +164,7 @@ body {
 .sponsor-box img{
     display: block;
     width: auto;
-    height: 100%; /* ocupar a altura disponível para parecer maior */
+    height: 100%; 
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
